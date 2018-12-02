@@ -4,10 +4,10 @@ import dash_html_components as html
 import pandas as pd
 import plotly.graph_objs as go
 import flask,os
-df = pd.read_csv(
-    'https://raw.githubusercontent.com/plotly/'
-    'datasets/master/gapminderDataFiveYear.csv')
-
+#df = pd.read_csv(
+#    'https://raw.githubusercontent.com/plotly/'
+#    'datasets/master/gapminderDataFiveYear.csv')
+df = pd.read_csv("/Users/worldcup/git/hackathon2018/data1.csv")
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 server = flask.Flask('app')
 server.secret_key = os.environ.get('secret_key', 'secret')
